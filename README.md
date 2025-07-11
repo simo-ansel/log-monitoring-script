@@ -22,16 +22,16 @@ Script Bash per il monitoraggio dei log di sicurezza su sistemi Linux. Il proget
 - Pacchetti installati: 
 	- `auditd`
 	- `mailutils` 
-	- `rsyslog`, `ufw`, `fail2ban` configurati
+	- `ufw`, `fail2ban` configurati
 
 Installa i pacchetti richiesti con:
 
 ```bash
 sudo apt update && sudo apt install auditd mailutils -y 
 ```
-Assicurati che `fail2ban`, `ufw`, `rsyslog`, `auditd` siano attivi:
+Assicurati che `fail2ban`, `ufw`, `auditd` siano attivi:
 ``` bash
-sudo systemctl enable --now auditd fail2ban ufw rsyslog
+sudo systemctl enable --now auditd fail2ban ufw 
 ```
 
 ## 🧾 File coinvolti
@@ -42,6 +42,7 @@ sudo systemctl enable --now auditd fail2ban ufw rsyslog
 - Attività ban/unban fail2ban: `/var/log/fail2ban.log`
 - Connessioni bloccate dal firewall UFW: `/var/log/ufw.log`
 - Backup email locale dei report: `/var/mail/<utente>`
+- Attività legate ai file monitorati: `/var/log/audit/audit.log`
 - File sensibile monitorato con `auditd`: `~/monitor/secret-script.sh`
 
 ## ⚙️ Configurazione iniziale
