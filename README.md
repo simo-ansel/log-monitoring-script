@@ -26,15 +26,14 @@ Genera report dettagliati sugli eventi rilevanti e li invia via email, con backu
 
 ---
 
-## 📌 Funzionalità  
+## ✅ Risultati
+- Rilevati login SSH falliti e riusciti  
+- Tracciati comandi sudo eseguiti  
+- Log di Fail2Ban e UFW integrati nel report  
+- Accessi a file sensibili catturati da auditd  
+- Report periodici salvati localmente e notifica inviata via email
 
-- Monitoraggio dei **login SSH falliti e riusciti**  
-- Rilevamento dell'uso di **comandi sudo** 
-- Analisi dei log di **Fail2Ban** e **UFW**  
-- Monitoraggio accessi a un file sensibile tramite **auditd**  
-- Report automatico formattato e salvato in `~/scheduled_logs/`  
-- Invio del report via `mail`  
-- Pulizia automatica dei log vecchi oltre 7 giorni
+---
 
 ## 🧰 Requisiti  
 
