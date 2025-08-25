@@ -1,9 +1,30 @@
 
 # 📄 Log Monitoring Script
 
-## 🛡️ Log Monitoring Script 
+🛡️ Script Bash per il monitoraggio dei log di sicurezza su Linux.  
+Genera report dettagliati sugli eventi rilevanti e li invia via email, con backup locale e archiviazione.
 
-Script Bash per il monitoraggio dei log di sicurezza su sistemi Linux. Il progetto simula attività di **detection** base su un server (Ubuntu), generando un **report dettagliato** delle attività rilevanti e inviandolo via email con backup locale. 
+---
+
+## 🚀 Panoramica
+
+- **Tecnologie usate:** Linux (Ubuntu), Bash, auditd, Fail2Ban, UFW, Postfix/mailutils  
+- **Competenze dimostrate:**
+  - Analisi di log di sistema (SSH, sudo, firewall, Fail2Ban, auditd)  
+  - Automazione con Bash e scheduling via cron  
+  - Integrazione con sistemi di notifica via email  
+  - Gestione log e retention (pulizia automatica oltre 7 giorni)  
+  - Configurazione SMTP relay sicuro (Postfix + Gmail)  
+
+---
+
+## 📂 File chiave
+- `monitor-logs.sh` – script principale di log monitoring  
+- `~/scheduled_logs/` – directory report generati  
+- `/var/log/auth.log`, `/var/log/fail2ban.log`, `/var/log/ufw.log`, `/var/log/audit/audit.log` – sorgenti dati  
+- `~/monitor/secret-script.sh` – file sensibile monitorato da auditd  
+
+---
 
 ## 📌 Funzionalità  
 
